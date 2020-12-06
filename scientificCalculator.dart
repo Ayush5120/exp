@@ -241,7 +241,12 @@ class _ScientificCalculatorState extends State<ScientificCalculator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: AppBar(
+        title: Text('Calculator'),
+        centerTitle: true,
+        elevation: 0.7,
+        backgroundColor: Color(0xFF283637),
+      ),
       backgroundColor: Color(0xFF283637),
       body: Container(
         child: Column(
@@ -298,7 +303,7 @@ class _ScientificCalculatorState extends State<ScientificCalculator> {
       child: Text(
         text is double ? text.toStringAsFixed(2) : text.toString(),
         style: TextStyle(
-          color: Color(0xFF444444),
+          color: Color(0xFFFFFFFF),
           fontSize: size,
         ),
         textAlign: TextAlign.end,

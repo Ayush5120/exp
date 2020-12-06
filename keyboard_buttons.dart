@@ -63,6 +63,7 @@ class KeyboardButtons extends StatelessWidget {
         alignment: Alignment.center,
         child: FlatButton(
           shape: RoundedRectangleBorder(
+            
             borderRadius: BorderRadius.circular(50.0),
           ),
           color: (buttons == EQUAL_SIGN)
